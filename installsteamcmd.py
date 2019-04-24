@@ -1,5 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import subprocess
+import pwd
 import os
 from pathlib2 import Path
 
@@ -19,11 +20,12 @@ print("Checking if /home/steamcmd is available... \n")
 my_file = Path ("/home/steamcmd")
 if my_file.is_dir():
     os.chdir("/home/steamcmd")
-    print("/home/steamcmd is already on the server, moving on.. \n")
+    print("/home/steamcmd is already on the server, moving on..")
 else:
     print("Not finding /home/steamcmd.. making folder")
     os.mkdir("/home/steamcmd")
     print("Folder should be created, testing it now \n")
     os.chdir("/home/steamcmd")
-    print("Successfully created /home/steamcmd")
+    print("Successfully create /home/steamcmd")
 
+    
