@@ -26,4 +26,10 @@ else:
     os.mkdir("/home/steamcmd")
     print("Folder should be created, testing it now \n")
     os.chdir("/home/steamcmd")
+<<<<<<< HEAD
     print("Successfully create /home/steamcmd")
+=======
+    print("Successfully create /home/steamcmd")
+
+    
+>>>>>>> master
